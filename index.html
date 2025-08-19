@@ -4,15 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, welcome to my portfolio!</h1>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Hamburger icon for mobile -->
+    <div class="hamburger">&#9776;</div>
+  </nav>
 
-  <!-- Link JS -->
+  <!-- Home Section -->
+  <section id="home" class="section home">
+    <h1>Hello, I'm [Your Name]</h1>
+    <p>A Data Scientist, Content Creator, and AI Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>Short description of project 1.</p>
+      <a href="#">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>Short description of project 2.</p>
+      <a href="#">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>Hi, I’m [Your Name]. I’m a Data Scientist, content creator, and AI enthusiast. 
+       I enjoy working on projects that combine data, storytelling, and technology.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="socials">
+      <a href="mailto:your@email.com">Email</a>
+      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+      <a href="https://github.com/yourusername">GitHub</a>
+      <a href="https://instagram.com/yourusername">Instagram</a>
+    </div>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>
