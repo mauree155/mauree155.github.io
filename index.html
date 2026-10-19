@@ -94,6 +94,7 @@
   .bar { height: 14px; background: var(--mint); border-radius: 7px; overflow: hidden; }
   .bar span { display: block; height: 100%; background: var(--teal); border-radius: 7px; }
   .bar.alt span { background: #8FB3AA; }
+  .chart { width: 100%; height: auto; display: block; border-radius: 8px; }
   .source { font-size: 0.82rem; color: var(--muted); margin: 16px 0 0; }
   .detail h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 6px; }
   .detail .tools { color: var(--teal); font-weight: 600; font-size: 0.95rem; margin: 0 0 14px; }
@@ -173,14 +174,7 @@
     <article class="project">
       <div class="finding">
         <p class="stat">Collisions on 60 mph roads in Wales were the most likely to kill or seriously injure</p>
-        <div class="bar-row">
-          <div class="bar-label"><span>60 mph roads</span><strong>46%</strong></div>
-          <div class="bar"><span style="width:46%"></span></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label"><span>All roads</span><strong>35%</strong></div>
-          <div class="bar alt"><span style="width:35%"></span></div>
-        </div>
+        <img class="chart" src="https://raw.githubusercontent.com/mauree155/wales-road-safety-2025/main/Charts/fig4_ksi_rate_by_speed_limit.png" alt="Bar chart of the share of collisions that killed or seriously injured someone, by speed limit. 60 mph roads are highest at 46.2%, against 35.4% for all roads." />
         <p class="source">Share of collisions with a death or serious injury, STATS19, 2025</p>
       </div>
       <div class="detail">
@@ -250,8 +244,9 @@
       <div class="detail">
         <h3>FraudWatch Africa</h3>
         <p class="tools">Python, Isolation Forest, FastAPI, Streamlit</p>
-        <p>An unsupervised fraud detection system for mobile money. I trained an Isolation Forest model without labelled fraud data, checked the separation with t-SNE and UMAP, and deployed it as a FastAPI endpoint for real time predictions with a Streamlit dashboard for monitoring.</p>
-        <a href="https://github.com/mauree155/FraudWatch-Africa" target="_blank">See the code on GitHub</a>
+        <p>A team project during my internship at DataVerse Africa, which I led. I built the unsupervised fraud detection system myself: an Isolation Forest model trained without labelled fraud data, checked with t-SNE and UMAP, and deployed as a FastAPI endpoint for real time predictions with a Streamlit dashboard for monitoring.</p>
+        <div class="actions"><a class="btn btn-primary" href="https://fraudwatch-africa.streamlit.app" target="_blank">Try the live demo</a> <a class="btn btn-plain" href="https://github.com/mauree155/FraudWatch-Africa" target="_blank">See the code</a></div>
+        <p class="source">The demo sleeps when idle, so it may take up to a minute to wake.</p>
       </div>
     </article>
   </div>
